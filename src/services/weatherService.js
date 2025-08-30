@@ -101,7 +101,7 @@ const formatForecastWeather = (data) => {
 
 const getAirQuality = async (lat, lon) => {
   try {
-    const url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
     const response = await fetch(url);
     const data = await response.json();
     return {
