@@ -57,12 +57,12 @@ function App() {
             setInitialLoad(false);
           },
           () => {
-            setQuery({ q: "New York" });
+            setQuery({ q: "Delhi" });
             setInitialLoad(false);
           }
         );
       } else {
-        setQuery({ q: "New York" });
+        setQuery({ q: "Delhi" });
         setInitialLoad(false);
       }
     }
